@@ -1,0 +1,394 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111;
+}
+
+.logo {
+    height: 30px;
+}
+
+.navbar a {
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.btn-signin {
+    padding: 8px 16px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.hero {
+    height: 80vh;
+    background: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-970-80.jpg.webp') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;}
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+}
+
+.email-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.email-form .btn {
+    padding: 10px 20px;
+    background-color: #e50914;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Popular Movies Section */
+.movies {
+    padding: 20px;
+    background-color: #141414; /* Dark background */
+    color: white;
+    text-align: center;
+}
+
+.movie-list {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    gap: 15px; /* Space between movie cards */
+    padding: 20px 0;
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #333 #141414; /* Firefox */
+}
+
+.movie-list::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height for Webkit */
+}
+
+.movie-list::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+.movie {
+    width: 200px;
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    background-color: #1c1c1c; /* Darker card background */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.movie-title {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+
+.form-container {
+    max-width: 300px;
+    margin: 100px auto;
+    padding: 50px;
+    background-color: #222;
+    border-radius: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn {
+    width: 100%;
+}
+.signin-page {
+    background: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-970-80.jpg.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-page {
+    background: url('https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY-970-80.jpg.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Trending Now Section */
+.trending-now {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+}
+
+.trending-list {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.trending-item {
+    width: 150px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.trending-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* More Reasons to Join Section */
+.reasons-to-join {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+}
+
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.reason {
+    width: 220px;
+}
+
+
+/* FAQ Section */
+.faq {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    font-size: 20px;
+    color: white;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #222;
+}
+
+/* Card Section */
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #141414;
+}
+
+.card {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Subscription Form */
+.subscription {
+    padding: 20px;
+    background-color: #141414;
+    color: white;
+    text-align: center;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subscription-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.subscription-form .btn {
+    padding: 10px 20px;
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+.footer a {
+    color: #757575;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Reasons to Join Section */
+.reasons-to-join {
+    padding: 20px;
+    background-color: #141414; /* Dark background to match the design */
+    color: white;
+    text-align: center;
+}
+
+.reasons-to-join h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.reasons-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.reason {
+    background-color: #1c1c1c; /* Card background color */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px; /* Adjust card width */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow */
+    position: relative;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.reason h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.reason p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.reason::before {
+    content: '★'; /* Placeholder for an icon */
+    font-size: 30px;
+    color: #e50914; /* Red color for the icon */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.reason:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    background-color: #333; /* Darken the background on hover */
+}
